@@ -15,7 +15,7 @@ func init() {
 
 func diff(first [32]byte, second [32]byte) int {
 	counter := 0
-	for pos := 0; pos < 32; pos++ {
+	for pos := range first {
 		counter += int(pc[first[pos]^second[pos]])
 	}
 	return counter

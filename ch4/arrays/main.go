@@ -19,7 +19,7 @@ func main() {
 	for i, v := range a {
 		fmt.Printf("%d %d\n", i, v)
 	}
-	var q [3]int = [3]int{1, 2, 3}
+	var q = [3]int{1, 2, 3}
 	var r [3]int = [3]int{1, 2}
 	q[1]++
 	fmt.Println(r[2])
