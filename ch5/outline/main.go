@@ -14,6 +14,7 @@ func main() {
 	}
 	outline(nil, doc)
 }
+
 func outline(stack []string, n *html.Node) {
 	if n.Type == html.ElementNode {
 		stack = append(stack, n.Data)
